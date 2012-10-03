@@ -1,0 +1,7 @@
+<template name="gameList">
+  <ul>
+    {{#each games}}
+      <li><a href="javascript:void(0)" role="go-to-game" data-id="{{_id}}">Game {{_id}}</a></li>
+    {{/each}}
+  </ul>
+</template>

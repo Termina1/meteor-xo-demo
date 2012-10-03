@@ -1,0 +1,17 @@
+<template name="fields">
+{{#if game.secondPlayer}}
+<table>
+{{#each game.fields}}
+<tr>
+  {{#each this}}
+  <td>{{this}}</td>
+  {{/each}}
+</tr>
+{{/each}}
+</table>
+{{else}}
+<div>
+waiting for a second player...
+</div>
+{{/if}}
+</template>
